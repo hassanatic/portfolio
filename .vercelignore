@@ -1,0 +1,7 @@
+# Keep personal source documents out of the deployment entirely
+reference-docs
+
+# local-only artifacts
+.playwright-mcp
+*.png
+scratchpad
