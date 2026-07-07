@@ -20,7 +20,7 @@ const RANDOM_LINES = [
   "ooh, you scrolled. fancy.",
   "go ask the terminal something weird",
   "I just keep the nodes company",
-  "hire him before someone else does",
+  "I've seen the git history. it's solid in there.",
   "I've read his whole CV. twice.",
   "10/10 would orchestrate again",
   "I'm basically the mascot here",
@@ -35,7 +35,7 @@ const SECTION_LINES: Record<string, string> = {
   "system-map": "so many skills, my circuits",
   deployments: "he actually shipped these",
   console: "go on, talk to the terminal",
-  escalate: "hire him already, I'm begging",
+  escalate: "this is where the actual human replies",
 };
 
 const TABS = ["Metosin", "Univ. of Oulu", "ACE"];
@@ -198,8 +198,7 @@ export function Companions() {
   }, []);
 
   useEffect(() => {
-    const check = () =>
-      setEnabled(window.innerWidth >= 1024 && !window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const check = () => setEnabled(window.innerWidth >= 1024 && !reduced);
     check();
     window.addEventListener("resize", check);
     return () => window.removeEventListener("resize", check);

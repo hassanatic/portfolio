@@ -9,9 +9,10 @@ import { usePrefersReducedMotion } from "@/hooks/usePrefersReducedMotion";
    margins, bonk into a card and shake it off, and scramble aside when content
    scrolls into them. They chase, brawl with a rod, plant bombs, breathe fire,
    hide at the edges to peek at you, and open portals to teleport and ambush
-   each other. lg+ only, off under reduced-motion, never blocks a click. */
+   each other. All screens ≥360px (scaled down and slowed on phones), off under
+   reduced-motion, never blocks a click. */
 
-const TAUNTS = ["lol nice cursor", "you've been here a while", "10 credits says you won't hire him", "we see you", "stop reading, start hiring", "psst, scroll down"];
+const TAUNTS = ["lol nice cursor", "you've been here a while", "10 credits says you'll scroll back up", "we see you", "the terminal talks back, you know", "psst, scroll down"];
 const FIGHT_WORDS = ["BONK", "WHACK", "BOP", "POW", "KAPOW"];
 const FLEE = ["aaah!", "not the rod!", "help!", "wait wait", "noooo"];
 const CHASE = ["get back here!", "come hereee", "grrr", "you're toast", "i'll get you"];
@@ -92,7 +93,7 @@ export function GroundBots() {
   const [portals, setPortals] = useState<{ a: { x: number; y: number } | null; b: { x: number; y: number } | null }>({ a: null, b: null });
 
   useEffect(() => {
-    const check = () => setEnabled(window.innerWidth >= 360 && !window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const check = () => setEnabled(window.innerWidth >= 360 && !reduced);
     check();
     window.addEventListener("resize", check);
     return () => window.removeEventListener("resize", check);

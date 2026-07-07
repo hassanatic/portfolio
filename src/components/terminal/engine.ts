@@ -156,11 +156,7 @@ export function commandExists(input: string): boolean {
    Helpers
    -------------------------------------------------------------------------- */
 const HR: OutLine = { tone: "muted", text: "─".repeat(46) };
-const statusDot: Record<string, Tone> = { live: "ok", flagship: "data", active: "ok", healthy: "ok", archived: "muted", "active ": "ok" };
-
-function kv(key: string, value: string, valueTone: Tone = "out"): OutLine {
-  return { segments: [{ text: key.padEnd(11), tone: "data" }, { text: value, tone: valueTone }] };
-}
+const statusDot: Record<string, Tone> = { live: "ok", flagship: "data", active: "ok", healthy: "ok", archived: "muted" };
 
 function neofetch(): OutLine[] {
   const art = [

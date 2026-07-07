@@ -15,7 +15,6 @@ export const agent = {
   disciplines: ["Software Engineering", "AI / ML & Agents", "Distributed Systems"],
   // Public professional address from CV / LinkedIn. Change here to update everywhere.
   email: "hassanraja.dev@gmail.com",
-  phone: "+358 41 7298 463",
   location: "Oulu, Finland",
   region: "EU-NORTH / OULU-FI",
   timezone: "Europe/Helsinki",

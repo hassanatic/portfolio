@@ -50,7 +50,7 @@ const CATEGORIES: Category[] = [
     replies: [
       "Anytime. Ask me more, or hit Escalate up top to talk to the actual human.",
       "Glad I could help. There's plenty more where that came from. What else?",
-      "Cheers. If you're impressed, that Escalate button is right there, just saying.",
+      "Cheers. The Escalate section up top reaches the actual human, whenever you're ready.",
       "You're welcome. Tell Hassan I did a good job, I don't get paid much.",
     ],
   },
@@ -186,7 +186,7 @@ const CATEGORIES: Category[] = [
       "There are 10 kinds of people: those who get binary and those who don't. Okay, ask me about Hassan now.",
       "Why do programmers prefer dark mode? Light attracts bugs. Anyway, want to hear about Hassan's work?",
       "A SQL query walks into a bar, sees two tables and asks 'can I join you?'. I'll stop. Ask me about Hassan.",
-      "My favourite joke is a recruiter saying 'we'll circle back'. Hire Hassan and end the bit.",
+      "My favourite joke is a recruiter saying 'we'll circle back'. Anyway, ask me about Hassan's work.",
     ],
   },
   {

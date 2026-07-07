@@ -25,6 +25,7 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://hassan-abdullah.vercel.app"),
   title: `${agent.name} · Control Plane`,
   description: `${agent.role}. ${agent.summary}`,
   applicationName: "Hassan Abdullah · Control Plane",
@@ -43,6 +44,14 @@ export const metadata: Metadata = {
     description:
       "A live observability console for Agent: Hassan Abdullah. Distributed systems, agentic AI, and the infrastructure around autonomous agents.",
     type: "website",
+    siteName: "Hassan Abdullah · Control Plane",
+    url: "/",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${agent.name} · Software & AI Engineer`,
+    description:
+      "A live observability console for Agent: Hassan Abdullah. Distributed systems, agentic AI, and the infrastructure around autonomous agents.",
   },
   robots: { index: true, follow: true },
 };
